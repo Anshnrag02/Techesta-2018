@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us | Techesta 2K18</title>
+	<link rel="stylesheet" type="text/css" href="stylesite.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="scriptfile.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <link rel="shortcut icon" type="image/ico" href="favicon.png">
+	 <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+</head>
+<body>
+<div id="warning-message">
+</div>
+<div id="mainsite">
+<div class="container" onclick="myFunction(this)" id="open">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<div id="mySidenav" class="sidenav">
+	<a href="home.html"><li>HOME</li></a>
+	<a href="events.html"><li>EVENTS</li></a>
+	<a href="https://docs.google.com/forms/d/e/1FAIpQLScsMf3veKNCfr3TPGr2hdWEVGD2DvaYMdxQqB3i9fiPwmAKtg/viewform?usp=sf_link" target="_blank"><li>REGISTER</li></a>
+  
+	<a href="contact_us.html" class="loaded"><li>CONTACT US</li></a>
+</div>
+<div id="main">
+<div id="cs">
+	<section id="darrow" class="mc">
+	<a href="#"><span></span><span></span><span></span></a>
+</section>
+</div>
+<div id="school">DAV PUBLIC SCHOOL<br>SRESHTHA VIHAR<br><div class="dabba" id="mapto">Map</div><div class="dabba" id="cu">Contact No.s</div></div>
+<div id="koi_bhi_naam_dimaag_mein_nahi_aarha">
+<div id="map"></div>
+</div>
+<div id="holder">
+<div class="contact" id="techesta">
+	<h1 class="head">Techesta</h1>
+	<p>
+		For General Query-<br>
+		Mr. Ashok Kumar Goel - 9868996844<br>(Supervisor Sec. Dept.)<br>
+		For Event specific query 
+		contact the respective event incharge	
+	</p>
+</div>
+</div>
+</div>
+<div id="warning-message">
+Please switch to landscape mode.</div>
+  <script>
+     function myMap() {
+ 	 var mapCanvas = document.getElementById("map");
+  	 var myCenter = new google.maps.LatLng(28.658069,77.317038); 
+  	 var mapOptions = {
+  	 	center: myCenter, zoom: 18,panControl: true,
+    zoomControl: true,
+    mapTypeControl: true,
+    scaleControl: true,
+    streetViewControl: true,
+    overviewMapControl: true,
+    rotateControl: true};
+  	 var map = new google.maps.Map(mapCanvas,mapOptions);
+  	 var marker = new google.maps.Marker({
+     position: myCenter,
+     animation: google.maps.Animation.BOUNCE
+  });
+  marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"<b>DAV Public School</b><br>Shreshtha Vihar,<br>Mahajan Complex,<br>Shreshtha Vihar,<br>Anand Vihar,<br>Delhi-110092<br>Phone: 011 2214 4102<br>"
+  });
+infowindow.open(map,marker);}
+
+$("#darrow span").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#map").offset().top},
+        1200);
+});
+
+$("#mapto").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#map").offset().top},
+        1200);
+});
+
+$("#cu").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".contact").offset().top},
+        1200);
+});
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa_4gRwATtex5KPwLVUBOwSqp88A2UlLY&callback=myMap" async defer></script>
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5bbe392c08387933e5bacbb9/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<audio loop autoplay=""><source src="arman.mp3" type="audio/mp3"></audio>
+</div>
+</body>
+</html>
